@@ -10,6 +10,7 @@ public class MarkdownParseTest{
     String file1;
     String file2;
     String file3;
+    String file4;
     @Before
     public void setUp() throws IOException{
         file1 = Files.readString(Path.of("test1.md"));
