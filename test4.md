@@ -1,4 +1,4 @@
 # title
 
-[link](link.com())
-[link](random.com())
+[link](link.com()
+[link](random.com()

@@ -32,6 +32,6 @@ public class MarkdownParseTest{
 
     @Test
     public void testExtra(){
-        assertEquals(List.of("link.com()", "random.com()"), MarkdownParse.getLinks(file4));
+        assertEquals(List.of("link.com(", "random.com("), MarkdownParse.getLinks(file4));
     }
 }
