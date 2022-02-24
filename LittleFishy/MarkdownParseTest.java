@@ -86,9 +86,7 @@ public class MarkdownParseTest {
         String contents = Files.readString(fileName);
         ArrayList <String> links = MarkdownParse.getLinks(contents);
         ArrayList <String> list = new ArrayList<String>();
-        list.add("https://www.twitter.com");
         list.add("https://ucsd-cse15l-w22.github.io/");
-        list.add("https://cse.ucsd.edu/");
         assertEquals(list, links);
     }
 
