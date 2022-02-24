@@ -34,4 +34,16 @@ public class MarkdownParseTest{
     public void testExtra(){
         assertEquals(List.of("link.com(", "random.com("), MarkdownParse.getLinks(file4));
     }
+
+    @Test
+    public void testfileSnippet1Test() throws IOException{
+        Path fileName = Path.of("LittleFishy/Snippet3.md");
+        String contents = Files.readString(fileName);
+        ArrayList <String> links = MarkdownParse.getLinks(contents);
+        ArrayList <String> list = new ArrayList<String>();
+        list.add("https://www.twitter.com");
+        list.add("https://ucsd-cse15l-w22.github.io/");
+        list.add("https://cse.ucsd.edu/");
+        assertEquals(list, links);
+    }
 }
