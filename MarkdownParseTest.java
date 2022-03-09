@@ -36,12 +36,11 @@ public class MarkdownParseTest{
     }
 
     @Test
-    public void testfileSnippet1Test() throws IOException{
-        Path fileName = Path.of("LittleFishy/Snippet3.md");
+    public void testfileLab1Test() throws IOException{
+        Path fileName = Path.of("549.md");
         String contents = Files.readString(fileName);
         ArrayList <String> links = MarkdownParse.getLinks(contents);
         ArrayList <String> list = new ArrayList<String>();
-        list.add("https://ucsd-cse15l-w22.github.io/");
         assertEquals(list, links);
     }
 }
